@@ -92,10 +92,6 @@ variables de DOM
 
 const barraBusqueda = document.getElementById("barra-busqueda");
 
-/* const btnOrdenNombre = document.getElementById("orden-nombre");
-
-const btnOrdenPrecio = document.getElementById("orden-precio");
- */
 const contenedorProductos = document.getElementById("contenedor-productos");
 
 const contenedorCarrito = document.getElementById("contenedor-carrito");
@@ -108,10 +104,6 @@ escuchadores de eventos
 ---------------------------*/ 
 
 barraBusqueda.addEventListener("input", filtrarProducto);/*el input se utiliza si se desea copiar y pegar, ya que al utilizar keyup o keydown al pegar no dispara el evento */
-
-/* btnOrdenNombre.addEventListener("click", () => ordenarProductos("nombre"));
-
-btnOrdenPrecio.addEventListener("click", () => ordenarProductos("precio")); */
 
 function mostrarLista(array){
     let htmlProductos = "";
@@ -277,6 +269,7 @@ function cargarCarrito(){
         contadorCarrito.textContent = carrito.length;
     }
 }
+
 /* Funcion bubble sort utiliza 2 iteracion del bucle for para ir ordenando la lista, la idea es comparar cada elemento con el siguiente y, si están en el orden incorrecto,
 los intercambia. Esto se repite varias veces hasta que toda la lista está ordenada.
 */

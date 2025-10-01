@@ -156,7 +156,6 @@ function mostrarTitulo() {
         contenedorTitulo.innerHTML = htmlTitulo;
     }
 
-    console.log("Se ha renderizado el título y los botones de orden.");
 }
 
 
